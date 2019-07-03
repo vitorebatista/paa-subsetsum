@@ -38,8 +38,12 @@ def subsetSum(v: list, k: int, n: int, t: int, res: list) -> list:
         current = []
         for i in range(n):
             s += v[i]
-            if (v[i] != 0):
+            # Garante que se o valor for menor, termina com a somatória
+            if (s > t):
+                return res
+            elif (v[i] != 0):
                 current.append(v[i])
+        
         if (s == t):
             res.append(current)
 
