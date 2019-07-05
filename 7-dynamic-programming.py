@@ -36,9 +36,3 @@ if (exist):
     print(f"Existe algum subconjunto de S tal que a soma de seus elementos seja t")
 else:
     print(f"Não existe nenhum subconjunto de S tal que a soma de seus elementos seja t")
-
-# R: A complexidade de tempo do algoritmo SUBSET-SUM utilizando programação dinâmica é O(n.t),
-# onde n é o número de elementos do conjunto e t o valor do somatório que se deseja alcançar.
-# A complexidade é polinomial ao valor de t, e exponencial ao número de dígitos de t
-# pois considerando que para um t=99 (2 dígitos) são calculadas 10 linhas, para um t=100
-# (3 dígitos) são calculadas 100 linhas - o que indica que é um problema pseudopolinomial.
